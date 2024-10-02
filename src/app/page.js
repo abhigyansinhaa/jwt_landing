@@ -94,22 +94,41 @@ export default function App() {
   ];
 
   return (
-    <div className="container">
-      <div className="row h-100">
-        <div className="col d-flex flex-column flex-md-row justify-content-around align-items-center">
-          <div className="wrapper">
-            <i id="left" className="fa-solid fas fa-angle-left"></i>
-            <ul className="carousel">
-              {cards.map((card) => (
-                <li className="card" key={card.id}>
-                  <FlipCard card={card} />
-                </li>
-              ))}
-            </ul>
-            <i id="right" className="fa-solid fas fa-angle-right"></i>
+    <><div>
+      <video
+        src='https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4' autoPlay loop
+        className="z-10 absolute min-w-full min-h-full" />
+      <div className="z-20">
+        <span className="z-20 relative text-5xl top-64 left-96 font-extrabold text-white">
+          WEBB SPACE TELESCOPE
+        </span>
+        <a href="#link">
+        <button
+          className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 z-20 top-96"
+        >
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            Image Gallery
+          </span>
+        </button>
+        </a>
+      </div>
+    </div><div className="container">
+      <a id="link"></a>
+        <div className="row h-100">
+          <div className="col d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <div className="wrapper">
+              <i id="left" className="fa-solid fas fa-angle-left"></i>
+              <ul className="carousel">
+                {cards.map((card) => (
+                  <li className="card" key={card.id}>
+                    <FlipCard card={card} />
+                  </li>
+                ))}
+              </ul>
+              <i id="right" className="fa-solid fas fa-angle-right"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div></>
   );
 }
