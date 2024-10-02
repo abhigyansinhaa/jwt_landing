@@ -23,7 +23,7 @@ function FlipCard({ card }) {
         </div>
         </div>
       </div>
-    );    
+    );   
   }  
   
 export default FlipCard;
