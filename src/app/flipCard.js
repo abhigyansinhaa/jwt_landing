@@ -9,20 +9,20 @@ function FlipCard({ card }) {
         })}//added here cuz we need inner card
       >
         <div className="card front">            
-          <img className= "absolute rounded-xl cardbg" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
+          <img className= "absolute rounded-xl cardbg" src='https://jwst-api-cdn.nyc3.cdn.digitaloceanspaces.com/jwst--jw02731001001_02103_00001_nrcblong_cal.jpg'/>
             <div className="card-body d-flex justify-content-center align-items-center">
               <p className="card-text fs-1 fw-bold">{card.front}</p>
             </div>
           </div>
           <div className="card back cardmargin">
-          <img className="absolute rounded-xl fg cardbg overflowzoom hover:text-center" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
-            <div className="relative z-10 backtext">
-            <p className="text-white font-bold px-6 py-6 text-2xl h-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <img className="absolute rounded-xl fg cardbg" src='https://jwst-api-cdn.nyc3.cdn.digitaloceanspaces.com/jwst--jw02731001001_02103_00001_nrcblong_cal.jpg'/>
+            <div className="top-[210px] relative z-10">
+            <span className="inline-block align-bottom text-white font-bold px-6 py-6 text-2xl h-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Qui dicta minus molestiae
                {/* officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus! */}
-            </p>             
+            </span>             
             </div>
-            <div className="card-body d-flex justify-content-center align-items-center">
+            <div className="card-body d-flex justify-content-center">
               <p className="card-text fs-1 fw-bold">{card.back}</p>
             </div>
           </div>

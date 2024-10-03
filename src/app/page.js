@@ -151,15 +151,15 @@ export default function App() {
             </span>
           </div>
 
-          <a href="#link">
+          <div >
             <div className="flex items-center justify-center">
               <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 dark:text-white focus:ring-4 z-20 mt-16">
-                <span className="relative px-5 py-2.5 max-md:px-1 max-md:py-1 max-md:text-sm bg-white rounded-md">
+                <a href="#link" className="relative font-bold text-black no-underline hover:text-black hover:scale-110 transition-all duration-500 px-5 py-2.5 max-md:px-1 max-md:py-1 max-md:text-sm bg-white rounded-md">
                   Image Gallery
-                </span>
+                </a>
               </button>
             </div>
-          </a>
+          </div>
         </div>
       </div>
 
