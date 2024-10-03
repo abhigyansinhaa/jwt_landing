@@ -17,8 +17,8 @@ function FlipCard({ card }) {
           <div className="card back">
           <img width='400px' className="absolute rounded-xl h-96 fg" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
             <div className="relative">
-            <p className="px-6 py-6 text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias 
+            <p className=" font-bold px-6 py-6 text-2xl h-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Qui dicta minus molestiae
                {/* officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus! */}
             </p>             
             </div>

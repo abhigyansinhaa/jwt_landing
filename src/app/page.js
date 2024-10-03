@@ -71,7 +71,7 @@ export default function App() {
 
     const autoPlay = () => {
       if (window.innerWidth < 800 || !isAutoPlay) return;
-      timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+      timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 3000);
     };
 
     // Arrow button click event
@@ -121,10 +121,7 @@ export default function App() {
     <>
       <div>
         <video
-          src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"
-          autoPlay
-          loop
-          className="z-10 absolute min-w-full min-h-full"
+          src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"autoPlay loop className="z-10 absolute min-w-full min-h-full"
         />
         <div className="z-20">
           <span className="z-20 relative text-5xl top-64 left-96 font-extrabold text-white">
