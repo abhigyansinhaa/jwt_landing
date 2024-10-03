@@ -122,12 +122,15 @@ export default function App() {
       <div>
         <video src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"autoPlay loop className="z-10 absolute min-w-full min-h-full"
         />
-        <div className="z-20">
-          <span className="z-20 relative text-5xl top-64 left-96 font-extrabold text-white">
+        <div className="z-20 text-center">
+        <span className="hero0 z-20 relative text-9xl font-black text-white">
+            JAMES
+          </span><br></br>
+          <span className="hero1 z-20 relative text-5xl font-extrabold text-white">
             WEBB SPACE TELESCOPE
           </span>
           <a href="#link">
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 dark:text-white focus:ring-4 z-20 top-96">
+            <button className="hero2 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 dark:text-white focus:ring-4 z-20 top-96">
               <span className="relative px-5 py-2.5 bg-white rounded-md">Image Gallery</span>
             </button>
           </a>
