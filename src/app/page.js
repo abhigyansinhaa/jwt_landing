@@ -130,21 +130,23 @@ export default function App() {
   return (
     <>
       <div>
+        <div>
         <video
           src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"
           autoPlay
           loop
-          className="-z-10 absolute max-md:w-screen min-w-full min-h-full"
+          className="-z-10 absolute max-md:w-fit max-md:h-screen  w-screen"
         />
+        </div>
         <div className="z-20 relative top-[50vh] -translate-y-1/2">
           <div className="flex text-center justify-center">
-            <span className="z-20 relative text-9xl font-black text-white">
+            <span className="z-20 relative text-9xl max-md:text-4xl font-black text-white">
               JAMES
             </span>
             <br></br>
           </div>
           <div className="flex text-center justify-center">
-            <span className="z-20 relative text-5xl font-extrabold text-white">
+            <span className="z-20 relative text-5xl max-md:text-xl font-extrabold text-white">
               WEBB SPACE TELESCOPE
             </span>
           </div>
@@ -152,7 +154,7 @@ export default function App() {
           <a href="#link">
             <div className="flex items-center justify-center">
               <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 dark:text-white focus:ring-4 z-20 mt-16">
-                <span className="relative px-5 py-2.5 bg-white rounded-md">
+                <span className="relative px-5 py-2.5 max-md:px-1 max-md:py-1 max-md:text-sm bg-white rounded-md">
                   Image Gallery
                 </span>
               </button>
@@ -161,7 +163,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="flex mt-32 ml-32 mb-32 mr-32 s2 items-center justify-center text-center">
+      <div className="flex mt-32 mb-32 mx-32 max-md:mx-5 s2 items-center justify-center text-center">
         <div className="text-white">
           <u>
             <h1>Revealing the Infrared Universe</h1>
