@@ -9,11 +9,12 @@ body {
   align-items:center;  
   justify-content:center;
   font-family: 'Ubuntu', sans-serif;  
-  background: linear-gradient(to bottom, #000000, #000000); /* Neutral 900 is #111827 */
+
+  background: linear-gradient(to bottom, #000000, #525252); /* Neutral 900 is #111827 */
 }
 .container {
-  margin-top: 700px;
-  background: radial-gradient(to bottom, #000000, #000000); /* Neutral 900 is #111827 *///changed linear to radial
+  background: radial-gradient(to bottom, #00081a, #111827); /* Neutral 900 is #111827 *///changed linear to radial
+ >>>>>>> main
   height: 100vh;
   position: relative;
 }
@@ -224,16 +225,7 @@ body {
 .cardmargin{
   z-index: 15;    
 }
-.hero0{
-  top: 200px;
-  letter-spacing: 0.025em;
-  
-}
-.hero1{
-  top: 220px;
-  left: 110px;
-}
-.hero2{
-  top: 330px;
-  right: 290px;
+
+.s2{
+  margin-top: 600px;
 }
