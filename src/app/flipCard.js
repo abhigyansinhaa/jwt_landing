@@ -9,15 +9,15 @@ function FlipCard({ card }) {
         })}//added here cuz we need inner card
       >
           <div className="card front">            
-          <img width='400px' className= "absolute rounded-xl h-96" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
+          <img className= "absolute rounded-xl cardbg" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
             <div className="card-body d-flex justify-content-center align-items-center">
               <p className="card-text fs-1 fw-bold">{card.front}</p>
             </div>
           </div>
-          <div className="card back">
-          <img width='400px' className="absolute rounded-xl h-96 fg" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
-            <div className="relative">
-            <p className=" font-bold px-6 py-6 text-2xl h-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <div className="card back cardmargin">
+          <img className="absolute rounded-xl fg cardbg" src='https://webbtelescope.org/files/live/sites/webb/files/home/_images/webb-science.jpg?t=tn2400'/>
+            <div className="relative z-10">
+            <p className="text-white font-bold px-6 py-6 text-2xl h-fit">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Qui dicta minus molestiae
                {/* officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus! */}
             </p>             

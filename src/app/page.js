@@ -120,8 +120,7 @@ export default function App() {
   return (
     <>
       <div>
-        <video
-          src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"autoPlay loop className="z-10 absolute min-w-full min-h-full"
+        <video src="https://stsci-opo.org/STScI-01J4M80RCME4DP0R50MGW5MK5V.mp4"autoPlay loop className="z-10 absolute min-w-full min-h-full"
         />
         <div className="z-20">
           <span className="z-20 relative text-5xl top-64 left-96 font-extrabold text-white">

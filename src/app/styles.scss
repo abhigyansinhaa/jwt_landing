@@ -8,13 +8,14 @@
 body {
   align-items:center;  
   justify-content:center;
-  font-family: 'Ubuntu', sans-serif;
-  background-image: radial-gradient(farthest-corner at 40px 40px,rgb(6, 5, 5) 0%, rgb(7, 7, 8) 100%);
+  font-family: 'Ubuntu', sans-serif;  
+  background: linear-gradient(to bottom, #00081a, #111827); /* Neutral 900 is #111827 */
 }
 .container {
   margin-top: 700px;
+  background: radial-gradient(to bottom, #00081a, #111827); /* Neutral 900 is #111827 *///changed linear to radial
   height: 100vh;
-  background-image: radial-gradient(farthest-corner at 40px 40px,rgb(6, 5, 5) 0%, rgb(7, 7, 8) 100%); 
+  position: relative;
 }
 .flip-card-outer {
   width: 300px;
@@ -37,20 +38,20 @@ body {
     }
 
     &.showBack {
+      
       transform: rotateY(180deg);
     }
   
     .card {
       scroll-snap-align: start;
-      // width: 300px;
-      // height: 400px;
+      width: 300px;
+      height: 400px;
       margin: 25px 0;
       margin: 0 20px;
       list-style: none;  
       border-radius: 8px;
       display: flex;
-      cursor: pointer;  
-      padding-bottom: 15px;
+      cursor: pointer;      
       align-items: center;
       justify-content: center;
       flex-direction: column;
@@ -59,21 +60,19 @@ body {
       box-shadow: none; /* Remove any box-shadow if applied */
       backface-visibility: hidden;
       position: absolute;
-      top: 8px;
+      //top: 8px;
       left: -20px;
       width: 100%;
       height: 100%;
   
       &.front {
         transform: rotateY(0);
-        background-image: radial-gradient(farthest-corner at 40px 40px,rgb(6, 5, 5) 0%, rgb(7, 7, 8) 100%);
+        background: transparent;
       }
   
       &.back {
         transform: rotateY(180deg);
-        // -webkit-filter: blur(5px);
-        // filter: blur(5px);
-        background-image: radial-gradient(farthest-corner at 40px 40px,rgb(6, 5, 5) 0%, rgb(7, 7, 8) 100%);
+        background: linear-gradient(to bottom, #00081a, #111827);
       }
     }
   }
@@ -82,7 +81,6 @@ body {
   max-width: 1100px;
   width: 100%;
   position: relative;
-
 }
 .wrapper i {//buttons
   top: 50%;
@@ -133,8 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(farthest-corner at 40px 40px,
-  rgb(6, 5, 5) 0%, rgb(7, 7, 8) 100%);
+  // background-color: red;
 }
 
 .carousel.dragging {
@@ -160,10 +157,12 @@ body {
   border-radius: 8px;
   display: flex;
   cursor: pointer;  
-  padding-bottom: 15px;
+  //padding-bottom: 15px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: transparent;
+  border:none;
 }
 
 .card .img {
@@ -190,7 +189,6 @@ body {
 .card span {
   color: #6a6d78;
   font-size: 1.31rem;
-
 }
 
 @media screen and (max-width: 900px) {
@@ -204,31 +202,26 @@ body {
       grid-auto-columns: 100%;
   }
 }
-.card {
-  scroll-snap-align: start;
-  width: 300px;
-  height: 400px;
-  margin: 25px 0;
-  margin: 0 20px;
-  list-style: none;  
-  border-radius: 8px;
-  display: flex;
-  cursor: pointer;  
-  padding-bottom: 15px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: transparent; /* Remove any background color */
-  border: none; /* Remove any border */
-  box-shadow: none; /* Remove any box-shadow if applied */
-}
 .fg{
-  -webkit-filter: blur(25px);
-        filter: blur(25px);
-
+  // -webkit-filter: blur(3px);
+  // filter: blur(3px);  
+  //padding:5px;
+  opacity:0.7;
+  border-radius:8px;    
+  // border: 5px solid rgba(256,256,256,1);
+  // border-spacing:none;
+  //box-shadow: 0 0 12px rgba(0,0,0,.3); 
 }
 .card-msg{
-  color: #718096;
+  color:white;
   font-size: 1rem;
   line-height: 1.5;
+}
+.cardbg{  
+  width: 300px;
+  height: 400px;
+}
+.cardmargin{
+  z-index: 15; 
+   
 }
