@@ -9,13 +9,13 @@ body {
   align-items:center;  
   justify-content:center;
   font-family: 'Ubuntu', sans-serif;  
-  background: linear-gradient(to bottom, #000000, #000000); /* Neutral 900 is #111827 */
+  background: linear-gradient(to bottom, #000000, #525252); /* Neutral 900 is #111827 */
 }
 .container {
   margin-top: 700px;
   background: radial-gradient(to bottom, #000000, #000000); /* Neutral 900 is #111827 *///changed linear to radial
   height: 100vh;
-  position: relative;
+  position: relative;  
 }
 .flip-card-outer {
   width: 300px;
@@ -27,18 +27,18 @@ body {
     outline-offset: 5px;
   }
 
-  .flip-card-inner {
+  .flip-card-inner {    
     transform-style: preserve-3d;
     transition: .5s linear .1s;
     position: relative;
     width: inherit;
     height: inherit;    
-    &.hover-trigger:hover {
+    &.hover-trigger:hover {      
+      // box-shadow: 5px 5px 5px 5px rgba(16, 163, 174, 0.5);
       transform: rotateY(180deg);
     }
 
-    &.showBack {
-      
+    &.showBack {      
       transform: rotateY(180deg);
     }
   
@@ -47,7 +47,7 @@ body {
       width: 300px;
       height: 400px;
       margin: 25px 0;
-      margin: 0 20px;
+      margin: 0 20px;      
       list-style: none;  
       border-radius: 8px;
       display: flex;
@@ -59,8 +59,7 @@ body {
       border: none; /* Remove any border */
       box-shadow: none; /* Remove any box-shadow if applied */
       backface-visibility: hidden;
-      position: absolute;
-      //top: 8px;
+      position: absolute;      
       left: -20px;
       width: 100%;
       height: 100%;
@@ -71,8 +70,12 @@ body {
       }
   
       &.back {
+        z-index:20;
+        // box-shadow: 5px 5px 5px 5px rgba(16, 163, 174, 0.5); /* Adjust color and intensity */
+        // transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
         transform: rotateY(180deg);
-        background: linear-gradient(to bottom, #000000, #000000);
+        // background: linear-gradient(to bottom, #000000, #000000);
+
       }
     }
   }
@@ -119,8 +122,8 @@ body {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
-  margin-left: 30px;  
-  margin-top: 40px;
+  margin-left:30px;  
+  margin-top: 40px;  
 }
 
 .carousel::-webkit-scrollbar {
@@ -130,7 +133,7 @@ body {
 .carousel :where(.card, .img) {//background of card doing bakchodi
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
   // background-color: red;
 }
 
@@ -151,7 +154,7 @@ body {
   scroll-snap-align: start;
   width: 300px;
   height: 400px;
-  margin: 25px 0;
+  margin: 25px 0;  
   margin: 0 20px;
   list-style: none;  
   border-radius: 8px;
@@ -203,11 +206,11 @@ body {
   }
 }
 .fg{
-  // -webkit-filter: blur(3px);
+  -webkit-filter: blur(3px);
   filter: blur(3px);  
   padding:5px;
-  opacity:0.7;
-  border-radius:8px;    
+  opacity:0.25;
+  border-radius:8px;  
   // border: 5px solid rgba(256,256,256,1);
   // border-spacing:none;
   //box-shadow: 0 0 12px rgba(0,0,0,.3); 
@@ -216,6 +219,22 @@ body {
   color:white;
   font-size: 1rem;
   line-height: 1.5;
+  text-align: center;
+}
+.backtext {
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+.backtext p {
+  margin: 0;
+  //background: yellow;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  margin-right:-50%;
+  transform: translate(-50%, -50%) 
 }
 .cardbg{  
   width: 300px;
@@ -226,8 +245,7 @@ body {
 }
 .hero0{
   top: 200px;
-  letter-spacing: 0.025em;
-  
+  letter-spacing: 0.025em;  
 }
 .hero1{
   top: 220px;
@@ -237,3 +255,20 @@ body {
   top: 330px;
   right: 290px;
 }
+// .overflowzoom{
+//   width: 290px;
+//   overflow: hidden;
+// }
+// .overflowzoom img:hover {
+//   -webkit-transform: scale(1.4); 
+//   -moz-transform: scale(1.4);
+//   -o-transform: scale(1.4);
+//   transform: scale(1.4);
+// }
+// .overflowzoom img{
+// -webkit-transition: all 2.5s ease-in-out;
+// -moz-transition: all 2.5s ease-in-out;
+// -o-transition: all 2.5s ease-in-out;
+// -ms-transition: all 2.5s ease-in-out;
+// width: 300px;
+// }
