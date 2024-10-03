@@ -9,10 +9,9 @@ body {
   align-items:center;  
   justify-content:center;
   font-family: 'Ubuntu', sans-serif;  
-  background: linear-gradient(to bottom, #00081a, #111827); /* Neutral 900 is #111827 */
+  background: linear-gradient(to bottom, #000000, #525252); /* Neutral 900 is #111827 */
 }
 .container {
-  margin-top: 700px;
   background: radial-gradient(to bottom, #00081a, #111827); /* Neutral 900 is #111827 *///changed linear to radial
   height: 100vh;
   position: relative;
@@ -224,4 +223,8 @@ body {
 .cardmargin{
   z-index: 15; 
    
+}
+
+.s2{
+  margin-top: 600px;
 }
